@@ -1,3 +1,4 @@
+# db/migrate/[timestamp]_create_options.rb
 class CreateOptions < ActiveRecord::Migration[5.1]
   def change
     create_table :options do |t|
