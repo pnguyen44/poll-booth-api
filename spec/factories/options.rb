@@ -1,5 +1,4 @@
-spec/factories/options.rb
-
+# spec/factories/options.rb
 FactoryBot.define do
   factory :option do
     name { Faker::StarWars.character }
