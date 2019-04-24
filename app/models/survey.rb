@@ -4,5 +4,5 @@ class Survey < ApplicationRecord
   has_many :options, dependent: :destroy
 
   # validations
-  validates_presence_of(:title, :description, :question, :created_by)
+  validates_presence_of :title, :description, :question, :created_by
 end
