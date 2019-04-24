@@ -9,10 +9,10 @@ RSpec.describe Survey, type: :model do
   # Validation tests
   # ensure columns title, description, question, and created_by are present before saving
 
-  it { should have validate_presence_of(:title) }
-  it { should have validate_presence_of(:description) }
-  it { should have validate_presence_of(:question) }
-  it { should have validate_presence_of(:created_by) }
+  it { should validate_presence_of(:title) }
+  it { should validate_presence_of(:description) }
+  it { should validate_presence_of(:question) }
+  it { should validate_presence_of(:created_by) }
 
   # pending "add some examples to (or delete) #{__FILE__}"
 end
