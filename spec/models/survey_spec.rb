@@ -1,5 +1,7 @@
 require 'rails_helper'
 
+# Test suite for the Survey model
+
 RSpec.describe Survey, type: :model do
   # Association test
   # ensure Survey model has a 1:m relationship with the Option model
