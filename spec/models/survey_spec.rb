@@ -12,5 +12,5 @@ RSpec.describe Survey, type: :model do
   it { should have validate_presence_of(:question) }
   it { should have validate_presence_of(:created_by) }
 
-  pending "add some examples to (or delete) #{__FILE__}"
+  # pending "add some examples to (or delete) #{__FILE__}"
 end
