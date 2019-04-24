@@ -123,7 +123,7 @@ RSpec.describe 'Surveys API', type: :request do
     end
 
     context 'when the requst is valid' do
-      befdore { post '/surveys', params: valid_attributes }
+      before { post '/surveys', params: valid_attributes }
 
       it 'creates a survey' do
         expect(json['title']).to eq('fruit')
