@@ -25,6 +25,21 @@ class SurveysController < ApplicationController
     end
   end
 
+  # PATCH/PUT /surveys/1
+  def update
+    if @survey.update(survey_params)
+      head :no_content
+    else
+      render json: @survey.errors, status: :unprocessable_entity
+    end
+  end
+
+  # DELETE /surveys/:id
+  def destroy
+    @survey.destroy
+    head :no_content
+  end
+
   # Use callbacks to share common setup or constraints between actions.
   def set_survey
     @survey = Survey.find(params[:id])
