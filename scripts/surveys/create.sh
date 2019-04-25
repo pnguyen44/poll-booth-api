@@ -1,9 +1,10 @@
-API="http://localhost:3000"
-URL_PATH="/surveys"
-TITLE='entertainment'
+TITLE='!!!!'
 DES='movies'
 QUEST='favorite color'
 CREATED_BY='me'
+
+API="http://localhost:3000"
+URL_PATH="/surveys"
 
 curl "${API}${URL_PATH}" \
   --include \
