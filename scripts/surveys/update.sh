@@ -1,10 +1,22 @@
+ID=2
+TITLE='!TEST....!!!!!!'
+DES='movies!!'
+QUEST='favorite color!!!!!'
+CREATED_BY='me!!!'
+
 API="http://localhost:3000"
 URL_PATH="/surveys/${ID}"
-ID=1
-
 curl "${API}${URL_PATH}" \
   --include \
-  --request GET \
-  --header "Content-Type: application/json"
+  --request PATCH \
+  --header "Content-Type: application/json" \
+  --data '{
+    "survey": {
+      "title": "'"${TITLE}"'",
+      "description": "'"${DES}"'",
+      "question": "'"${QUEST}"'",
+      "created_by": "'"${CREATED_BY}"'"
+    }
+  }'
 
 echo
