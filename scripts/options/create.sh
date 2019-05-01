@@ -11,10 +11,12 @@ curl "${API}${URL_PATH}" \
   --header "Content-Type: application/json" \
   --data '{
     "option": {
-      "survey_id": "3",
+      "survey_id": "'"${SURVEY_ID}"'",
       "name": "'"${NAME}"'",
       "vote_count": "'"${VOTE_COUNT}"'"
     }
   }'
+
+  echo
 
 echo
