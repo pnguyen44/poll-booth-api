@@ -2,7 +2,7 @@
 
 # app/controllers/options_controller.rb
 class OptionsController < ApplicationController
-  before_action :set_option, only: %i[show update destory]
+  before_action :set_option, only: %i[show update destroy]
   before_action :set_survey, only: %i[create]
 
   # GET /options
@@ -28,11 +28,17 @@ class OptionsController < ApplicationController
     end
   end
 
+  # DELETE /options/1
+  def destroy
+    @option.destroy
+    head :no_content
+  end
 
   # Use callbacks to share common setup or constraints between actions.
 
   def set_option
-    @option = @survey.options.find_by!(id: params[:id]) if @survey
+    puts ".......set option.... #{params}"
+    @option = @survey.options.find(params[:id]) if @survey
   end
 
   def set_survey
