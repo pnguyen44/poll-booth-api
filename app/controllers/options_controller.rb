@@ -2,8 +2,8 @@
 
 # app/controllers/options_controller.rb
 class OptionsController < ApplicationController
-  before_action :set_option, only: %i[show update destroy]
   before_action :set_survey, only: %i[create]
+  before_action :set_option, only: %i[show update destroy]
 
   # GET /options
   def index
@@ -16,7 +16,6 @@ class OptionsController < ApplicationController
     render json: @option
   end
 
-
   # POST /options
   def create
     puts "..in create..#{@survey.options}"
@@ -28,23 +27,37 @@ class OptionsController < ApplicationController
     end
   end
 
+  # PATCH/PUT /options/1
+  def update
+    puts "...upate#{@option}"
+    if @option.update(option_params)
+      head :no_content
+    else
+      render json: @option.errors, status: :unprocessable_entity
+    end
+  end
+
   # DELETE /options/1
   def destroy
     @option.destroy
     head :no_content
   end
 
-  # Use callbacks to share common setup or constraints between actions.
+  private
 
+  # Use callbacks to share common setup or constraints between actions.
   def set_option
-    puts ".......set option.... #{params}"
-    @option = @survey.options.find(params[:id]) if @survey
+    @option = Option.find(params[:id])
+    # @option = @survey.options.find_by(id: params[:id]) if @survey
+    puts ".......set option.... #{@option}"
   end
 
   def set_survey
     survey_id = option_params[:survey_id]
-    puts "TEST =.......... #{option_params}"
+    # puts "TEST =.......... #{option_params}"
     @survey = Survey.find(survey_id)
+    # puts ".......set sruvey.... #{@survey.options}"
+
   end
 
   # Only allow a trusted parameter "white list" through.
