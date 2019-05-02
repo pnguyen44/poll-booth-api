@@ -1,5 +1,5 @@
 SURVEY_ID=3
-NAME='blue berries'
+NAME='blackberries'
 VOTE_COUNT=1
 
 # API="http://localhost:3000"

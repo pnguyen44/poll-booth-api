@@ -1,7 +1,7 @@
-ID=2
+ID=8
 
-# API="http://localhost:3000"
-API="https://poll-booth-api.herokuapp.com"
+API="http://localhost:3000"
+# API="https://poll-booth-api.herokuapp.com"
 
 URL_PATH="/surveys/${ID}"
 
