@@ -1,24 +1,16 @@
-# README
+# Poll Booth Api
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## API end-points
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+| Verb   | URI Pattern             | Controller#Action    |
+|--------|-------------------------|----------------------|
+| GET    | `/surveys`           | `surveys#index`   |
+| POST   | `/surveys`           | `surveys#create`  |
+| GET    | `/surveys/:id`       | `surveys#show`    |
+| PATCH  | `/surveys/:id`       | `surveys#update`  |
+| DELETE | `/surveys/:id`       | `surveys#destroy` |
+| GET    | `/options`           |`options#index`        |
+| POST   | `/options`           |`options#create`       |
+| GET    | `/options/:id`       |`options#show`         |
+| PATCH  | `/options/:id`       |`options#update`       |
+| DELETE | `/options/:id`       |`options#destroy`      |
