@@ -18,7 +18,6 @@ class OptionsController < ApplicationController
 
   # POST /options
   def create
-    puts "..in create..#{@survey.options}"
     option = @survey.options.new(option_params)
     if @survey && option.save
       render json: @option, status: :created
@@ -29,7 +28,6 @@ class OptionsController < ApplicationController
 
   # PATCH/PUT /options/1
   def update
-    puts "...upate#{@option}"
     if @option.update(option_params)
       head :no_content
     else
@@ -49,14 +47,11 @@ class OptionsController < ApplicationController
   def set_option
     @option = Option.find(params[:id])
     # @option = @survey.options.find_by(id: params[:id]) if @survey
-    puts ".......set option.... #{@option}"
   end
 
   def set_survey
     survey_id = option_params[:survey_id]
-    # puts "TEST =.......... #{option_params}"
     @survey = Survey.find(survey_id)
-    # puts ".......set sruvey.... #{@survey.options}"
 
   end
 
