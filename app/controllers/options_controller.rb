@@ -52,7 +52,6 @@ class OptionsController < ApplicationController
   def set_survey
     survey_id = option_params[:survey_id]
     @survey = Survey.find(survey_id)
-
   end
 
   # Only allow a trusted parameter "white list" through.
