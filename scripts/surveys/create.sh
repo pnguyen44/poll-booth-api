@@ -1,9 +1,10 @@
 TITLE='!!!!'
-DES='movies'
-QUEST='favorite color'
+DES='veg'
+QUEST='favorite veg'
 CREATED_BY='me'
 
-API="http://localhost:3000"
+# API="http://localhost:3000"
+API="https://poll-booth-api.herokuapp.com"
 URL_PATH="/surveys"
 
 curl "${API}${URL_PATH}" \

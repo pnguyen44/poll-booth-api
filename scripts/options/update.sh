@@ -1,8 +1,10 @@
-ID=16
-NAME='!updateing....!!!!!!'
+ID=1
+NAME='green'
 VOTE_COUNT='11'
 
-API="http://localhost:3000"
+# API="http://localhost:3000"
+API="https://poll-booth-api.herokuapp.com"
+
 URL_PATH="/options/${ID}"
 
 curl "${API}${URL_PATH}" \

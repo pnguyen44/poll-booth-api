@@ -1,8 +1,10 @@
-SURVEY_ID=7
-NAME='add more stuffXXXX'
+SURVEY_ID=3
+NAME='blue berries'
 VOTE_COUNT=1
 
-API="http://localhost:3000"
+# API="http://localhost:3000"
+API="https://poll-booth-api.herokuapp.com"
+
 URL_PATH="/options"
 
 curl "${API}${URL_PATH}" \

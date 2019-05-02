@@ -1,10 +1,12 @@
-ID=2
+ID=1
 TITLE='!update........!!!!!!'
-DES='movies!!'
+DES='color!!'
 QUEST='favorite color!!!!!'
 CREATED_BY='me!!!'
 
-API="http://localhost:3000"
+# API="http://localhost:3000"
+API="https://poll-booth-api.herokuapp.com"
+
 URL_PATH="/surveys/${ID}"
 curl "${API}${URL_PATH}" \
   --include \
