@@ -1,4 +1,4 @@
-# Poll Booth Api
+# Poll Booth API
 
 ## API end-points
 
