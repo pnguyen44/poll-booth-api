@@ -1,5 +1,5 @@
-SURVEY_ID=3
-NAME='test optioin'
+SURVEY_ID=7
+NAME='add more stuffXXXX'
 VOTE_COUNT=1
 
 API="http://localhost:3000"
