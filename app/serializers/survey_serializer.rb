@@ -2,7 +2,7 @@
 
 # app/serializer/survey_serializer.rb
 class SurveySerializer < ActiveModel::Serializer
-  attributes :id, :title, :description, :question, :created_by
+  attributes :id, :title, :question
   has_many :options
 end
 
