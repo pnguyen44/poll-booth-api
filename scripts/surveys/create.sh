@@ -1,10 +1,8 @@
-TITLE='!!!!'
-DES='veg'
-QUEST='favorite veg'
-CREATED_BY='me'
+TITLE='survey.....'
+QUEST='favorite survey?'
 
-# API="http://localhost:3000"
-API="https://poll-booth-api.herokuapp.com"
+API="http://localhost:3000"
+# API="https://poll-booth-api.herokuapp.com"
 URL_PATH="/surveys"
 
 curl "${API}${URL_PATH}" \
@@ -14,9 +12,7 @@ curl "${API}${URL_PATH}" \
   --data '{
     "survey": {
       "title": "'"${TITLE}"'",
-      "description": "'"${DES}"'",
-      "question": "'"${QUEST}"'",
-      "created_by": "'"${CREATED_BY}"'"
+      "question": "'"${QUEST}"'"
     }
   }'
 
