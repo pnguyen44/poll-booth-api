@@ -18,8 +18,8 @@ class OptionsController < ApplicationController
 
   # POST /options
   def create
-    option = @survey.options.new(option_params)
-    if @survey && option.save
+    @option = @survey.options.new(option_params)
+    if @survey && @option.save
       render json: @option, status: :created
     else
       render json: @option.errors, status: :unprocessable_entity
