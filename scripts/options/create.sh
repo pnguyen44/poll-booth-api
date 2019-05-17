@@ -1,9 +1,9 @@
-SURVEY_ID=3
+SURVEY_ID=150
 NAME='blackberries'
 VOTE_COUNT=1
 
-# API="http://localhost:3000"
-API="https://poll-booth-api.herokuapp.com"
+API="http://localhost:3000"
+# API="https://poll-booth-api.herokuapp.com"
 
 URL_PATH="/options"
 
