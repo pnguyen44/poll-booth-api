@@ -1,5 +1,3 @@
-# Poll Booth API
-
 # Poll Booth
 A full stack app that allows users to add, take, and delete surveys. It was created using ruby on rails, JavaScript, React, HTML, CSS, and Material-UI.
 
