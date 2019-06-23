@@ -39,7 +39,7 @@ A full stack app that allows users to add, take, and delete surveys. It was crea
   - HTML
   - CSS
   - Node Package Manager
-  - chart.js
+  - Chart.js
 
 - Back End
   - Ruby on Rails
