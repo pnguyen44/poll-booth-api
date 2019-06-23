@@ -43,5 +43,5 @@ A full stack app that allows users to add, take, and delete surveys. It was crea
   - Node Package Manager
 
 - Back End
-  -Ruby on Rails
+  - Ruby on Rails
   - Heroku
