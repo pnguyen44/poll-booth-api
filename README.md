@@ -10,6 +10,10 @@ A full stack app that allows users to add, view, take, and delete surveys. It wa
 | server api, deployed | https://poll-booth-api.herokuapp.com/           |
 | server api repo  | https://github.com/pnguyen44/poll-booth-api    |
 
+
+## ERD
+![alt text](img/ERD.png "ERD")
+
 ## API Endpoints
 | Verb   | URI Pattern             | Controller#Action    |
 |--------|-------------------------|----------------------|
