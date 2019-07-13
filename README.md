@@ -12,7 +12,7 @@ A full stack app that allows users to add, view, take, and delete surveys. It wa
 
 
 ## ERD
-![alt text](img/ERD.png "ERD")
+![](img/ERD.png "ERD")
 
 ## API Endpoints
 | Verb   | URI Pattern             | Controller#Action    |
